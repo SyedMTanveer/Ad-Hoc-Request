@@ -29,7 +29,7 @@ order by Total_stores DESC;
     LEFT JOIN dim_campaigns AS c ON fe.campaign_id = c.campaign_id
     GROUP BY c.campaign_name;
 
-    -- Question 4:-Generate a report to calculate incremental sold quantity percentage (ISU%) per each category during diwali campaign.
+   -- Question 4:-Generate a report to calculate incremental sold quantity percentage (ISU%) per each category during diwali campaign.
     with category_revenue as (
     SELECT 
     d.category,
